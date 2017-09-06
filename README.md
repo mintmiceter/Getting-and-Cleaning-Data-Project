@@ -3,9 +3,9 @@
 if(!require(tidyverse)) install.packages('tidyverse')
 
 \# If UIC HAR Dataset doesn't exist in /Coursera/Getting & Cleaning Data 
-\n then download and unzip 
+\n\n then download and unzip 
 \n else print('already exists')
-if(!'UCI HAR Dataset' %in% list.files('~/Coursera/Getting & Cleaning Data')){
+if(!'UCI HAR Dataset' %in% list.files('\~/Coursera/Getting & Cleaning Data')){
   \# download file
   download.file('https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip',
                 path.expand('~/Coursera/Getting & Cleaning Data/UCI HAR Dataset.zip'))
