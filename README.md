@@ -15,8 +15,10 @@ if(!'UCI HAR Dataset' %in% list.files('~/Coursera/Getting & Cleaning Data')){
   print('Already exists')
 }
 ```
-# set working directory to UIC HAR Dataset folder
+#### set working directory to UIC HAR Dataset folder
+```
 setwd('~/Coursera/Getting & Cleaning Data/UCI HAR Dataset')
+```
 
 #### 1. Merge the training and the test sets to create one data set.
 ```
