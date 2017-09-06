@@ -8,14 +8,12 @@ if(!'UCI HAR Dataset' %in% list.files('~/Coursera/Getting & Cleaning Data')){
   download.file('https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip',
                 path.expand('~/Coursera/Getting & Cleaning Data/UCI HAR Dataset.zip'))
   # unzip
-  #$$$ unzip('C:/Users/Minty/Documents/Coursera/Getting & Cleaning Data/UCI HAR Dataset.zip')
   unzip('~/Coursera/Getting & Cleaning Data/UCI HAR Dataset.zip')
 }else{
   print('Already exists')
 }
 
 # set working directory to UIC HAR Dataset folder
-#$$$ setwd('~/Coursera/Getting & Cleaning Data/UCI HAR Dataset')
 setwd('~/Coursera/Getting & Cleaning Data/UCI HAR Dataset')
 
 # 1. Merge the training and the test sets to create one data set.
